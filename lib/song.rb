@@ -46,7 +46,8 @@ class Song
     artist, song_name = filename_array[0], filename_array[1]
     puts "artist #{artist}"
     puts "song name #{song_name}"
-    song = self.new_by_name(song_name)
+    song = self.new
+    song.name = song_name
     song.artist_name = artist
     song.save
     song
