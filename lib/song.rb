@@ -26,7 +26,7 @@ class Song
     song = self.new_by_name(name)
     song.save
     song
-  ends
+  end
   
   def self.find_by_name(name)
     self.all.find{|song| song.name == name}
@@ -47,10 +47,4 @@ class Song
     song.artist_name = artist
     song
   end
-  
-  # def create_from_filename(filename)
-  #   song = self.new_from_filename(filename)
-  #   song.save
-  #   song
-  # end
 end
