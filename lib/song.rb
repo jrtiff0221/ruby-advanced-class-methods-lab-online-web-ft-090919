@@ -37,4 +37,8 @@ class Song
     find_name ? find_name : self.create_by_name(name)
   end
   
+  def self.alphabetical
+    
+  end  
+  
 end
