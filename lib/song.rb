@@ -42,10 +42,10 @@ class Song
   end  
   
   def self.new_from_filename(filename)
-    filename_array = filename.slice!(".mp3").split(" - ")
+    filename_array = filename.slice(".mp3").split(" - ")
     artist, song_name = filename_array[0], filename_array[1]
     puts "artist #{artist}"
-    puts "songname #{song_name}"
+    puts "song name #{song_name}"
     song = self.new_by_name(song_name)
     song.artist_name = artist
     song.save
