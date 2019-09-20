@@ -51,7 +51,7 @@ class Song
     song.save
     song
   end
+end
+
   
 Song.new_from_filename("Taylor Swift - Blank Space.mp3")
-  
-end
