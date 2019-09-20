@@ -42,9 +42,10 @@ class Song
   end  
   
   def self.new_from_filename
+    song = self.new 
     artist, song_name = filename.remove(".mp3").split("-")
     
-    song = self.new_by_name(song_name)
+    song.name = song_name
     song.artist_name = artist.strip
     song
   end
