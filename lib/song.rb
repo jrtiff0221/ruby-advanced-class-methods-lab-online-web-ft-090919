@@ -41,7 +41,7 @@ class Song
     @@all.sort_by {|song| song.name}
   end  
   
-  def self.new_from_filename
+  def self.new_from_filename(filename)
     artist, song_name = filename.remove(".mp3").split(" - ")
     puts "artist #{artist}"
     puts "songname #{song_name}"
