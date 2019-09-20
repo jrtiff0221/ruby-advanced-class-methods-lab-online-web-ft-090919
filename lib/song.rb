@@ -51,4 +51,6 @@ class Song
     song
   end
   
+Song.new_from_filename()
+  
 end
