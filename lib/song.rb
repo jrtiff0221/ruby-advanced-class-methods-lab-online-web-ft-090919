@@ -46,7 +46,7 @@ class Song
     artist, song_name = filename.remove(".mp3").split("-")
     
     song.name = song_name
-    song.artist_name = artist.strip
+    song.artist_name = artist
     song
   end
   
